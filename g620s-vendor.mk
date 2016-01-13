@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    libloc_api_v02 \
+    libloc_ds_api
+
+PRODUCT_PACKAGES += \
     libtime_genoff
 
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor-blobs.mk)
