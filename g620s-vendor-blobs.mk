@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/sound_param/g620s_l01l02/Speaker_cal.acdb:system/etc/sound_param/g620s_l01l02/Speaker_cal.acdb \
     $(PATH_FILES)/etc/sound_param/g620s_l01l02/Headset_cal.acdb:system/etc/sound_param/g620s_l01l02/Headset_cal.acdb \
     $(PATH_FILES)/etc/sound_param/g620s_l01l02/Hdmi_cal.acdb:system/etc/sound_param/g620s_l01l02/Hdmi_cal.acdb \
@@ -60,7 +63,8 @@ PRODUCT_COPY_FILES += \
 
 # Lib
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so
+    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
+    $(PATH_FILES)/lib/libstlport.so:system/lib/libstlport.so
 
 # Vendor
 PRODUCT_COPY_FILES += \
@@ -82,6 +86,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(PATH_FILES)/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(PATH_FILES)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
@@ -98,11 +105,15 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     $(PATH_FILES)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
+    $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     $(PATH_FILES)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     $(PATH_FILES)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    $(PATH_FILES)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     $(PATH_FILES)/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
@@ -124,6 +135,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(PATH_FILES)/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    $(PATH_FILES)/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
+    $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     $(PATH_FILES)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
@@ -137,8 +150,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     $(PATH_FILES)/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
-    $(PATH_FILES)/vendor/lib/libxml.so:system/vendor/lib/libxml.so
+    $(PATH_FILES)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/vm_bms:recovery/root/sbin/vm_bms
