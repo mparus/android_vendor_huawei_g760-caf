@@ -68,6 +68,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     $(PATH_FILES)/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     $(PATH_FILES)/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
