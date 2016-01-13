@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
     $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
+    $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
     $(PATH_FILES)/bin/radish:system/bin/radish \
     $(PATH_FILES)/bin/rfs_access:system/bin/rfs_access \
     $(PATH_FILES)/bin/rmt_oeminfo:system/bin/rmt_oeminfo \
@@ -63,6 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Lib
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
     $(PATH_FILES)/lib/libstlport.so:system/lib/libstlport.so
 
@@ -73,6 +75,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
@@ -89,6 +94,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so
 
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     $(PATH_FILES)/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(PATH_FILES)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
@@ -102,6 +110,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     $(PATH_FILES)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
@@ -135,10 +145,12 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(PATH_FILES)/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     $(PATH_FILES)/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    $(PATH_FILES)/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     $(PATH_FILES)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     $(PATH_FILES)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     $(PATH_FILES)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
@@ -146,12 +158,16 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     $(PATH_FILES)/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     $(PATH_FILES)/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    $(PATH_FILES)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     $(PATH_FILES)/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     $(PATH_FILES)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     $(PATH_FILES)/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
+    $(PATH_FILES)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    $(PATH_FILES)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     $(PATH_FILES)/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     $(PATH_FILES)/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     $(PATH_FILES)/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so
