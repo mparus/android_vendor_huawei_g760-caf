@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     TimeService
 
 PRODUCT_PACKAGES += \
+    com.qualcomm.location
+
+PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api
 

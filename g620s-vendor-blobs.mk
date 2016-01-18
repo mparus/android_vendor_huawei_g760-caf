@@ -19,6 +19,7 @@ PATH_FILES := vendor/huawei/g620s/proprietary
 
 # Bin
 PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/bin/adsprpcd:system/bin/adsprpcd \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
@@ -65,8 +66,7 @@ PRODUCT_COPY_FILES += \
 # Lib
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/libstlport.so:system/lib/libstlport.so
+    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so
 
 # Vendor
 PRODUCT_COPY_FILES += \
@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     $(PATH_FILES)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     $(PATH_FILES)/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    $(PATH_FILES)/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     $(PATH_FILES)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     $(PATH_FILES)/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     $(PATH_FILES)/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
@@ -109,20 +110,26 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    $(PATH_FILES)/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     $(PATH_FILES)/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    $(PATH_FILES)/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     $(PATH_FILES)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     $(PATH_FILES)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
+    $(PATH_FILES)/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     $(PATH_FILES)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     $(PATH_FILES)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     $(PATH_FILES)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    $(PATH_FILES)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     $(PATH_FILES)/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     $(PATH_FILES)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     $(PATH_FILES)/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    $(PATH_FILES)/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
@@ -133,6 +140,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    $(PATH_FILES)/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     $(PATH_FILES)/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -144,9 +152,8 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     $(PATH_FILES)/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(PATH_FILES)/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    $(PATH_FILES)/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
+    $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     $(PATH_FILES)/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     $(PATH_FILES)/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     $(PATH_FILES)/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
