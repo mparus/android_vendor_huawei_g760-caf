@@ -117,12 +117,12 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    $(PATH_FILES)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
-    $(PATH_FILES)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
     $(PATH_FILES)/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    $(PATH_FILES)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
+    $(PATH_FILES)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     $(PATH_FILES)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     $(PATH_FILES)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     $(PATH_FILES)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
@@ -132,11 +132,12 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     $(PATH_FILES)/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+    $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    $(PATH_FILES)/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
     $(PATH_FILES)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
@@ -171,7 +172,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    $(PATH_FILES)/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
     $(PATH_FILES)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(PATH_FILES)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
