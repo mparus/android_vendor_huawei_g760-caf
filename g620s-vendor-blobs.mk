@@ -43,6 +43,33 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     $(PATH_FILES)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    $(PATH_FILES)/etc/firmware/cherry_gis_fw.img:system/etc/firmware/cherry_gis_fw.img \
+    $(PATH_FILES)/etc/firmware/cherry_ofilm_fw.img:system/etc/firmware/cherry_ofilm_fw.img \
+    $(PATH_FILES)/etc/firmware/cherry_yassy_fw.img:system/etc/firmware/cherry_yassy_fw.img \
+    $(PATH_FILES)/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+    $(PATH_FILES)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+    $(PATH_FILES)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    $(PATH_FILES)/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
+    $(PATH_FILES)/etc/firmware/fused_nvm_y635_cl00.bin:system/etc/firmware/fused_nvm_y635_cl00.bin \
+    $(PATH_FILES)/etc/firmware/g620S_junda_fw.img:system/etc/firmware/g620S_junda_fw.img \
+    $(PATH_FILES)/etc/firmware/g620S_ofilm_fw.img:system/etc/firmware/g620S_ofilm_fw.img \
+    $(PATH_FILES)/etc/firmware/g620S_truly_fw.img:system/etc/firmware/g620S_truly_fw.img \
+    $(PATH_FILES)/etc/firmware/g660S_ofilm_fw.img:system/etc/firmware/g660S_ofilm_fw.img \
+    $(PATH_FILES)/etc/firmware/g660S_truly_fw.img:system/etc/firmware/g660S_truly_fw.img \
+    $(PATH_FILES)/etc/firmware/g760-HB3748B8EBC_FMT_ATL.fw:system/etc/firmware/g760-HB3748B8EBC_FMT_ATL.fw \
+    $(PATH_FILES)/etc/firmware/g760-HB3748B8EBC_LS_LS.fw:system/etc/firmware/g760-HB3748B8EBC_LS_LS.fw \
+    $(PATH_FILES)/etc/firmware/g760-HB3748B8EBC_XWD_SDI.fw:system/etc/firmware/g760-HB3748B8EBC_XWD_SDI.fw \
+    $(PATH_FILES)/etc/firmware/g760L_lensone_fw.img:system/etc/firmware/g760L_lensone_fw.img \
+    $(PATH_FILES)/etc/firmware/g760L_ofilm_fw.img:system/etc/firmware/g760L_ofilm_fw.img \
+    $(PATH_FILES)/etc/firmware/goodix_new_ofilm_fw.bin:system/etc/firmware/goodix_new_ofilm_fw.bin \
+    $(PATH_FILES)/etc/firmware/goodix_ofilm_fw.bin:system/etc/firmware/goodix_ofilm_fw.bin \
+    $(PATH_FILES)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    $(PATH_FILES)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    $(PATH_FILES)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    $(PATH_FILES)/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
+    $(PATH_FILES)/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
+    $(PATH_FILES)/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
+    $(PATH_FILES)/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     $(PATH_FILES)/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     $(PATH_FILES)/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     $(PATH_FILES)/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
@@ -66,7 +93,8 @@ PRODUCT_COPY_FILES += \
 # Lib
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so
+    $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
+    $(PATH_FILES)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so
 
 # Vendor
 PRODUCT_COPY_FILES += \
@@ -117,11 +145,11 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     $(PATH_FILES)/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     $(PATH_FILES)/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    $(PATH_FILES)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(PATH_FILES)/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     $(PATH_FILES)/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     $(PATH_FILES)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     $(PATH_FILES)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    $(PATH_FILES)/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     $(PATH_FILES)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     $(PATH_FILES)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     $(PATH_FILES)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
@@ -134,7 +162,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     $(PATH_FILES)/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(PATH_FILES)/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    $(PATH_FILES)/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     $(PATH_FILES)/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     $(PATH_FILES)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(PATH_FILES)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
