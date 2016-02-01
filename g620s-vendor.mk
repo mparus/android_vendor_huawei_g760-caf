@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location
 
 PRODUCT_PACKAGES += \
+    libcutilz \
     libloc_api_v02 \
     libloc_ds_api
 
