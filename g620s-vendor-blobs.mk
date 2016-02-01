@@ -633,6 +633,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     $(PATH_FILES)/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     $(PATH_FILES)/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
+    $(PATH_FILES)/vendor/lib/libqcamerasvr-c++.so:system/vendor/lib/libqcamerasvr-c++.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     $(PATH_FILES)/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
