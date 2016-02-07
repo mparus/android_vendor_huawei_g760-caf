@@ -640,7 +640,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqcamerasvr-c++.so:system/vendor/lib/libqcamerasvr-c++.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
-    $(PATH_FILES)/vendor/lib/libqct-resampler.so:system/vendor/lib/libqct-resampler.so \
+    $(PATH_FILES)/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     $(PATH_FILES)/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     $(PATH_FILES)/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     $(PATH_FILES)/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
