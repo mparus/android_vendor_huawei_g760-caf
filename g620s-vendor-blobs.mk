@@ -132,6 +132,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    $(PATH_FILES)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    $(PATH_FILES)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+
 # Actuator
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so \
@@ -633,6 +638,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqcamerasvr-c++.so:system/vendor/lib/libqcamerasvr-c++.so \
     $(PATH_FILES)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     $(PATH_FILES)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    $(PATH_FILES)/vendor/lib/libqct-resampler.so:system/vendor/lib/libqct-resampler.so \
     $(PATH_FILES)/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     $(PATH_FILES)/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     $(PATH_FILES)/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
@@ -664,6 +670,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     $(PATH_FILES)/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     $(PATH_FILES)/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    $(PATH_FILES)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     $(PATH_FILES)/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(PATH_FILES)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(PATH_FILES)/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
