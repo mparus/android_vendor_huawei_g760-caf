@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/btnvtool:system/bin/btnvtool \
     $(PATH_FILES)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
-    $(PATH_FILES)/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
@@ -95,18 +94,12 @@ PRODUCT_COPY_FILES += \
 
 # Lib
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so
-
-PRODUCT_COPY_FILES += \
     $(PATH_FILES)/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     $(PATH_FILES)/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     $(PATH_FILES)/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    $(PATH_FILES)/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    $(PATH_FILES)/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     $(PATH_FILES)/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     $(PATH_FILES)/lib/liboeminfo.so:system/lib/liboeminfo.so \
-    $(PATH_FILES)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    $(PATH_FILES)/lib/libqomx_core.so:system/lib/libqomx_core.so
+    $(PATH_FILES)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so
 
 # Vendor
 PRODUCT_COPY_FILES += \
@@ -651,7 +644,6 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     $(PATH_FILES)/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     $(PATH_FILES)/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    $(PATH_FILES)/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     $(PATH_FILES)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     $(PATH_FILES)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     $(PATH_FILES)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
