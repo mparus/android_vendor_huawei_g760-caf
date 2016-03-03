@@ -81,6 +81,9 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 PRODUCT_COPY_FILES += \
+     $(PATH_FILES)/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
+
+PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
 
 PRODUCT_COPY_FILES += \
