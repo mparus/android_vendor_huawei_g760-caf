@@ -593,6 +593,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     $(PATH_FILES)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     $(PATH_FILES)/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
+    $(PATH_FILES)/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so \
     $(PATH_FILES)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     $(PATH_FILES)/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     $(PATH_FILES)/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
