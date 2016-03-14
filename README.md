@@ -1,1 +1,1 @@
-# android_vendor_huawei_g620s-caf
+# android_vendor_huawei_g760-caf
