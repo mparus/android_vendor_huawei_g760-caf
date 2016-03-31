@@ -87,13 +87,13 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
 
 PRODUCT_COPY_FILES += \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Speaker_cal.acdb:system/etc/sound_param/g620s_l01l02/Speaker_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Headset_cal.acdb:system/etc/sound_param/g620s_l01l02/Headset_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Hdmi_cal.acdb:system/etc/sound_param/g620s_l01l02/Hdmi_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Handset_cal.acdb:system/etc/sound_param/g620s_l01l02/Handset_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Global_cal.acdb:system/etc/sound_param/g620s_l01l02/Global_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/General_cal.acdb:system/etc/sound_param/g620s_l01l02/General_cal.acdb \
-    $(PATH_FILES)/etc/sound_param/g620s_l01l02/Bluetooth_cal.acdb:system/etc/sound_param/g620s_l01l02/Bluetooth_cal.acdb
+    $(PATH_FILES)/etc/sound_param/g760_l01/Speaker_cal.acdb:system/etc/sound_param/g760_l01/Speaker_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/Headset_cal.acdb:system/etc/sound_param/g760_l01/Headset_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/Hdmi_cal.acdb:system/etc/sound_param/g760_l01/Hdmi_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/Handset_cal.acdb:system/etc/sound_param/g760_l01/Handset_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/Global_cal.acdb:system/etc/sound_param/g760_l01/Global_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/General_cal.acdb:system/etc/sound_param/g760_l01/General_cal.acdb \
+    $(PATH_FILES)/etc/sound_param/g760_l01/Bluetooth_cal.acdb:system/etc/sound_param/g760_l01/Bluetooth_cal.acdb
 
 # Lib
 PRODUCT_COPY_FILES += \
