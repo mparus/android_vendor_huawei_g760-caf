@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     $(PATH_FILES)/bin/irsc_util:system/bin/irsc_util \
     $(PATH_FILES)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(PATH_FILES)/bin/mpdecision:system/bin/mpdecision \
+    $(PATH_FILES)/bin/msm_irqbalance:system/bin/msm_irqbalance \
     $(PATH_FILES)/bin/netmgrd:system/bin/netmgrd \
     $(PATH_FILES)/bin/qmuxd:system/bin/qmuxd \
     $(PATH_FILES)/bin/qseecomd:system/bin/qseecomd \
@@ -108,6 +109,12 @@ PRODUCT_COPY_FILES += \
 # Vendor
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/bin/perfd:system/vendor/bin/perfd
+
+PRODUCT_COPY_FILES += \
+    $(PATH_FILES)/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
 
 PRODUCT_COPY_FILES += \
     $(PATH_FILES)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
