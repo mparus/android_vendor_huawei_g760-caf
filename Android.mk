@@ -1,4 +1,5 @@
 # Copyright (C) 2015 The CyanogenMod Project
+
 # Copyright (C) 2016 @surdu_petru
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
